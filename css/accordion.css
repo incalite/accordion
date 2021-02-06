@@ -1,0 +1,94 @@
+.caret {
+    display: inline-block;
+    border-top: 5px solid #000;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    vertical-align:middle;
+}
+
+@media (max-width: 767px){
+    .caret { display: none;}
+    .sandwitch {
+        margin-bottom: 0;
+    }
+    .sandwitch-btn {
+        display: inline-block;
+        background: #fff;
+        padding-top: 4px;
+        padding-left: 7px;
+        padding-right: 7px;
+        border: 1px solid #aaa;
+        cursor: pointer;
+        border-radius: 2px;
+    }
+    .sandwitch > .explore {
+        text-decoration: none;
+        color: #000;
+        vertical-align: middle;
+        display: inline-block;
+        margin-top: -15px;
+        font-size: 20px;
+    }
+    
+    .dash {
+        height: 2px;
+        width: 25px;
+        display: block;
+        background-color: #000;
+        margin-bottom: 4px;
+    }
+    .accordion {
+        display: block;
+    }
+    .accordion > ul {
+        display: none;
+        list-style-type: none;
+        margin-left: -2.3em;
+        margin-top: 3px;
+    }
+    .accordion > ul > .dropdown > .dropdown-toggle {
+        display: block;
+        padding: .4em .8em;
+        border-bottom: 1px solid #ccc;
+    }
+    .accordion > ul > .dropdown > .dropdown-menu {
+        list-style-type: none;
+        margin-top: 0;
+    }
+    .accordion > ul > .dropdown > .dropdown-menu > li {
+        margin-left: -2em;
+        padding: .5em;
+    }
+}
+@media (min-width: 768px){
+    .sandwitch { display: none; }
+    .sandwitch-btn { display: none; }
+    .accordion {
+        display: flex;
+    }
+    .accordion > ul {
+        display: block;
+        list-style-type: none;
+    }
+    .accordion > ul > .dropdown {
+        float: left;
+       /*  border: 1px solid red; */
+        margin-right: 1em;
+        padding: 0;
+    }
+    .accordion > ul > .dropdown > .dropdown-toggle {
+        display: inline-block;
+        width: 6.8em;
+    }
+
+    .accordion > ul > .dropdown > .dropdown-menu {
+        list-style-type: none;
+        margin-top: 0;
+        border: 1px solid #000;
+    }
+
+    .accordion > ul > .dropdown > .dropdown-menu > li {
+        margin-left: -2em;
+        padding: .4em;
+    }
+}
